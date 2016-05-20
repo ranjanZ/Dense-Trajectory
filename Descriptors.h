@@ -288,7 +288,9 @@ void DrawTrack(const std::vector<Point2f>& point, const int index, const float s
 
 		line(image, point0, point1, Scalar(0,cvFloor(255.0*(j+1.0)/float(index+1.0)),0), 2, 8, 0);
 		point0 = point1;
+    printf("(%f,%f) \t \n",point0.x, point0.y);
 	}
+  printf("------------------------------\n");
 	circle(image, point0, 2, Scalar(0,0,255), -1, 8, 0);
 }
 
